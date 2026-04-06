@@ -1,0 +1,5 @@
+.env
+secrets*
+*.bag
+*.mp4
+*.pem

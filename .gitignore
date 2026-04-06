@@ -1,0 +1,8 @@
+.env
+*.log
+*.bag
+*.mp4
+build/
+install/
+log/
+__pycache__/
