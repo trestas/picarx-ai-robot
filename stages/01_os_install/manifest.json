@@ -1,0 +1,26 @@
+{
+  "stage_id": "01",
+  "stage_name": "os_install",
+  "title": "Ubuntu Server 24.04.4 LTS diegimas į Raspberry Pi 5",
+  "status": "in_progress",
+  "acceptance_checks": [
+    "SD kortelė įrašyta Ubuntu Server 24.04.4 LTS atvaizdu",
+    "Raspberry Pi 5 sėkmingai užsikrauna",
+    "Veikia prisijungimas prie sistemos",
+    "Veikia tinklas",
+    "Veikia SSH",
+    "Sistema atnaujinta",
+    "Etapo dokumentacija įkelta į GitHub"
+  ],
+  "created_files": [
+    "stages/01_os_install/README.md",
+    "stages/01_os_install/scripts/check_ubuntu_stage1.sh",
+    "stages/01_os_install/scripts/first_boot_prep.sh",
+    "stages/01_os_install/configs/system-info-template.txt",
+    "stages/01_os_install/configs/ssh-client-example.txt",
+    "stages/01_os_install/artifacts/stage1-notes.txt",
+    "deploy/cloud-init/user-data.template",
+    "deploy/cloud-init/meta-data.template"
+  ],
+  "next_stage": "02_ros2_base"
+}

@@ -1,0 +1,7 @@
+Etapas 01 vykdomas.
+
+Po įvykdymo įrašyti:
+- hostname
+- IP
+- SSH statusą
+- boot pastabas
