@@ -1,0 +1,11 @@
+Etapas 03 vykdomas.
+
+Po įvykdymo čia įrašyti:
+- faktinį vairo centro kampą
+- ar servo centravimas veikė
+- ar kairys variklis sukosi pirmyn / atgal
+- ar dešinys variklis sukosi pirmyn / atgal
+- ar reikėjo invertuoti kryptį
+- ar buvo atliktas grindų testas
+- ar stop komanda veikė patikimai
+- kitas pastabas

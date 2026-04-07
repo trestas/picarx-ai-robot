@@ -1,0 +1,13 @@
+servo:
+  min_angle: -25
+  max_angle: 25
+
+motor:
+  min_test_speed: 10
+  max_test_speed: 25
+  max_test_duration_sec: 2.0
+
+drive:
+  max_forward_speed: 20
+  max_reverse_speed: 20
+  max_segment_duration_sec: 1.5

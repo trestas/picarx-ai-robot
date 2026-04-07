@@ -1,0 +1,31 @@
+{
+  "stage_id": "03",
+  "stage_name": "picarx_base_hw",
+  "title": "PiCar-X bazinės aparatūros sužadinimas",
+  "status": "in_progress",
+  "acceptance_checks": [
+    "Robot HAT bazinė prieiga veikia",
+    "Vairo servo gali būti centruojamas",
+    "Abu varikliai sukasi valdomai",
+    "Stop komanda veikia patikimai",
+    "Trumpa drive seka įvykdoma saugiai",
+    "Kalibracijos reikšmės užfiksuotos",
+    "Etapo failai įkelti į GitHub"
+  ],
+  "created_files": [
+    "stages/03_picarx_base_hw/README.md",
+    "stages/03_picarx_base_hw/scripts/install_picarx_base.sh",
+    "stages/03_picarx_base_hw/scripts/check_hw_stack.sh",
+    "stages/03_picarx_base_hw/scripts/deploy_stage3_to_pi.sh",
+    "stages/03_picarx_base_hw/scripts/collect_stage3_artifacts.sh",
+    "stages/03_picarx_base_hw/configs/picarx_base.env",
+    "stages/03_picarx_base_hw/configs/calibration_template.yaml",
+    "stages/03_picarx_base_hw/configs/safety_limits.yaml",
+    "stages/03_picarx_base_hw/src/test_servo_center.py",
+    "stages/03_picarx_base_hw/src/test_motors.py",
+    "stages/03_picarx_base_hw/src/test_drive_sequence.py",
+    "stages/03_picarx_base_hw/src/emergency_stop.py",
+    "stages/03_picarx_base_hw/artifacts/stage3-notes.txt"
+  ],
+  "next_stage": "04_ultrasonic_driver"
+}
