@@ -1,0 +1,16 @@
+Etapas 04 užbaigtas
+
+Ultragarso skaitymas: veikia
+Naudotas metodas: Picarx().get_distance()
+
+Atmestas variantas:
+- RPi.GPIO / gpiozero su rankiniais BCM TRIG/ECHO pin'ais
+
+Safety stop:
+- SAFE_DISTANCE_CM = 25
+- DRIVE_SPEED = 18
+- rezultatas: veikia / neveikia / testuota tik dalinai
+
+Pastabos:
+- PiCar-X integruotas ultragarsas veikia per vidinį Picarx sluoksnį
+- rankinis BCM pin'ų variantas šiame projekte nenaudojamas

@@ -1,0 +1,15 @@
+stage: 04_ultrasonic_driver
+
+driver_mode: picarx_builtin
+read_method: Picarx.get_distance()
+
+safety:
+  safe_distance_cm: 25
+  drive_speed: 18
+
+status:
+  distance_read_ok: true
+  safety_stop_ok: false
+  final_solution_selected: true
+
+notes: ""

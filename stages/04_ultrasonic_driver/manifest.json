@@ -1,0 +1,21 @@
+{
+  "stage_id": "04",
+  "stage_name": "ultrasonic_driver",
+  "title": "Ultragarso jutiklio integracija ir safety stop sluoksnis",
+  "status": "completed",
+  "implementation": {
+    "driver_mode": "picarx_builtin",
+    "method": "Picarx.get_distance()",
+    "notes": "Naudojamas integruotas PiCar-X ultragarso driveris (Robot HAT D2/D3)"
+  },
+  "acceptance_checks": [
+    "Atstumas nuskaitomas stabiliai",
+    "Veikia Picarx.get_distance() metodas",
+    "Safety stop sustabdo robotą prie kliūties",
+    "Nenaudojamas RPi.GPIO ar tiesioginiai BCM pinai",
+    "Parametrai užfiksuoti config faile",
+    "Etapas dokumentuotas README",
+    "Failai įkelti į GitHub"
+  ],
+  "next_stage": "05_line_tracking"
+}
