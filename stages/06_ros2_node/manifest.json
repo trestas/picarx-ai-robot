@@ -1,0 +1,27 @@
+{
+  "stage_id": "06",
+  "stage_name": "ros2_node",
+  "title": "Pirmas ROS2 node su PiCar-X integracija",
+  "status": "completed",
+  "implementation": {
+    "node": "fusion_node",
+    "framework": "rclpy",
+    "control": "Picarx API",
+    "sensors": [
+      "Picarx.get_distance()",
+      "Picarx.get_grayscale_data()"
+    ],
+    "notes": "Line-follow logika naudota tik kaip ROS2 integracijos testas, ne kaip galutinė navigacijos strategija"
+  },
+  "acceptance_checks": [
+    "ROS2 paketas picarx_control sukurtas",
+    "Paketas susibuildina per colcon",
+    "ros2 run picarx_control fusion_node paleidžiamas",
+    "Node pasiekia Picarx valdymo sluoksnį",
+    "Ultragarso duomenys skaitomi",
+    "Grayscale duomenys skaitomi",
+    "Etapas dokumentuotas README",
+    "Failai įkelti į GitHub"
+  ],
+  "next_stage": "07_ros_topics"
+}
