@@ -1,0 +1,23 @@
+{
+  "stage_id": "05",
+  "stage_name": "line_tracking",
+  "title": "Line tracking ir sensor fusion (linija + ultragarso sauga)",
+  "status": "completed",
+  "implementation": {
+    "line_sensor": "Picarx.get_grayscale_data()",
+    "ultrasonic": "Picarx.get_distance()",
+    "control_logic": "rule_based",
+    "notes": "Naudojamas paprastas threshold-based line following + obstacle stop"
+  },
+  "acceptance_checks": [
+    "Line sensor grąžina duomenis",
+    "Robotas seka liniją",
+    "Robotas koreguoja kryptį pagal sensorių",
+    "Ultragarso jutiklis sustabdo robotą",
+    "Line + ultrasonic veikia kartu (fusion)",
+    "Parametrai užfiksuoti config faile",
+    "Etapas dokumentuotas README",
+    "Failai įkelti į GitHub"
+  ],
+  "next_stage": "06_ros2_node"
+}

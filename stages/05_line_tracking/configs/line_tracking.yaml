@@ -1,0 +1,8 @@
+threshold: 400
+steering:
+  left: -15
+  right: 15
+speed:
+  forward: 20
+  turn: 18
+safety_distance_cm: 25
