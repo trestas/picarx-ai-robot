@@ -1,0 +1,20 @@
+Etapas 09 užbaigtas
+
+Lidar modelis: RPLidar A1M8
+USB portas: /dev/ttyUSB0
+Baudrate: 115200
+Frame ID: laser
+
+ROS:
+- package: sllidar_ros2
+- node: sllidar_node
+- topic: /scan
+
+Testai:
+- /scan exists: yes
+- topic echo: yes
+- topic hz: yes
+
+Pastabos:
+- RViz šiame etape nenaudotas
+- tikslas buvo stabilus LaserScan srautas

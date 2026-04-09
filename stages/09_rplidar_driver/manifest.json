@@ -1,0 +1,25 @@
+{
+  "stage_id": "09",
+  "stage_name": "rplidar_driver",
+  "title": "RPLidar A1M8 integracija",
+  "status": "completed",
+  "implementation": {
+    "driver": "sllidar_ros2",
+    "model": "RPLidar A1M8",
+    "serial_port": "/dev/ttyUSB0",
+    "serial_baudrate": 115200,
+    "frame_id": "laser",
+    "scan_topic": "/scan",
+    "notes": "Naudojamas oficialus SLAMTEC ROS2 paketas; RViz šiame etape nebūtinas."
+  },
+  "acceptance_checks": [
+    "Lidaras aptiktas kaip /dev/ttyUSB*",
+    "sllidar_ros2 susibuildina",
+    "sllidar_node paleidžiamas",
+    "/scan tema egzistuoja",
+    "LaserScan duomenys gaunami",
+    "README sukurtas",
+    "Failai įkelti į GitHub"
+  ],
+  "next_stage": "10_bno055_driver"
+}

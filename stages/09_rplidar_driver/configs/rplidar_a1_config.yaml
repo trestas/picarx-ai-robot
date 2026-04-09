@@ -1,0 +1,8 @@
+driver: sllidar_ros2
+model: rplidar_a1m8
+serial_port: /dev/ttyUSB0
+serial_baudrate: 115200
+frame_id: laser
+inverted: false
+angle_compensate: true
+scan_mode: Sensitivity
