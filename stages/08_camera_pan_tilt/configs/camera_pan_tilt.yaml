@@ -1,0 +1,11 @@
+pan:
+  center: -7
+  left_limit: -42
+  right_limit: 28
+
+tilt:
+  center: 0
+  down_limit: -35
+  up_limit: 35
+
+step_deg: 5

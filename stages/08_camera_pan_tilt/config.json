@@ -1,0 +1,45 @@
+{
+  "stage_id": "08",
+  "stage_name": "camera_pan_tilt_full",
+  "camera": {
+    "sensor": "ov5647",
+    "stack": "raspberrypi libcamera fork + rpicam-apps + camera_ros",
+    "snapshot_file": "artifacts/camera_snapshot.jpg",
+    "ros_topics": {
+      "image_raw": "/camera/image_raw",
+      "camera_info": "/camera/camera_info"
+    },
+    "ros_parameters": {
+      "camera": 0,
+      "role": "viewfinder",
+      "width": 640,
+      "height": 480,
+      "frame_id": "camera_frame",
+      "camera_info_url": "file:///home/arvydas/.ros/camera_info/ov5647.yaml"
+    }
+  },
+  "pan_tilt": {
+    "enabled": true,
+    "topics": {
+      "pan": "/cmd_camera_pan",
+      "tilt": "/cmd_camera_tilt"
+    },
+    "limits_deg": {
+      "pan_min": -35,
+      "pan_max": 35,
+      "tilt_min": -35,
+      "tilt_max": 35
+    }
+  },
+  "web": {
+    "enabled": true,
+    "service": "web_video_server",
+    "port": 8080,
+    "stream_topic": "/camera/image_raw"
+  },
+  "notes": [
+    "Tiesioginis v4l2_camera kelias per /dev/video0 nebuvo pasirinktas kaip galutinis.",
+    "Grayscale jutikliai publikuojami kitame etape, bet navigacijai kol kas nenaudojami.",
+    "Kamera šioje stadijoje dar nenaudojama navigacijai; ji paruošta diagnostikai, web sąsajai ir aukštesnio lygio AI užduotims."
+  ]
+}
