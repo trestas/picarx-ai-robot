@@ -1,0 +1,19 @@
+Etapas 08 užbaigtas
+
+Pan servo: OK
+Tilt servo: OK
+
+ROS pan/tilt:
+- /cmd_camera_pan: OK
+- /cmd_camera_tilt: OK
+
+Camera path:
+- libcamera source build: OK
+- rpicam-apps source build: OK
+- detected camera: ov5647
+- snapshot created: yes
+
+Pastabos:
+- kamera navigacijai kol kas nenaudojama
+- pan/tilt naudojami diagnostikai ir būsimai web sąsajai
+- ROS image topic bus įgyvendintas kitame etape

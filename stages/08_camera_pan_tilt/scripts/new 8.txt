@@ -1,0 +1,2 @@
+source ~/03_picarx_base_hw/.venv/bin/activate
+
