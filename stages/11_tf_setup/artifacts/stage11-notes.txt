@@ -1,0 +1,21 @@
+Etapas 11 užbaigtas
+
+Sukurti frame:
+- base_link
+- laser
+- imu_link
+- camera_frame
+
+Sukurti statiniai transform'ai:
+- base_link -> laser
+- base_link -> imu_link
+- base_link -> camera_frame
+
+Tikslas:
+- pasiruošti robot_localization
+- pasiruošti sensor fusion
+- pasiruošti SLAM
+
+Pastabos:
+- naudotos pradinės darbinės koordinatės
+- vėliau prireikus koordinatės gali būti patikslintos pagal realų mechaninį išdėstymą

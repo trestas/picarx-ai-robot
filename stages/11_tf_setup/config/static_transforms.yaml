@@ -1,0 +1,24 @@
+frames:
+  base_link: "base_link"
+  laser: "laser"
+  imu_link: "imu_link"
+  camera_frame: "camera_frame"
+
+transforms:
+  laser:
+    parent: "base_link"
+    child: "laser"
+    xyz: [0.0, 0.0, 0.12]
+    rpy: [0.0, 0.0, 0.0]
+
+  imu:
+    parent: "base_link"
+    child: "imu_link"
+    xyz: [0.0, 0.0, 0.05]
+    rpy: [0.0, 0.0, 0.0]
+
+  camera:
+    parent: "base_link"
+    child: "camera_frame"
+    xyz: [0.08, 0.0, 0.10]
+    rpy: [0.0, 0.0, 0.0]
