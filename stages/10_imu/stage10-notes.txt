@@ -1,0 +1,22 @@
+Etapas 10 užbaigtas
+
+Jutiklis: BNO055
+Sąsaja: I2C
+
+ROS:
+- node: imu_node
+- topic: /imu
+- type: sensor_msgs/msg/Imu
+
+Publikuojami duomenys:
+- orientation: yes
+- angular_velocity: yes
+- linear_acceleration: yes
+
+Dažnis:
+- apie 10 Hz
+
+Pastabos:
+- node paleidžiamas per sudo
+- /imu patikra su sudo veikia korektiškai
+- IMU paruoštas naudoti sensor fusion etape

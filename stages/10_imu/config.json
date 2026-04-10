@@ -1,0 +1,28 @@
+{
+  "stage_id": "10",
+  "stage_name": "bno055_imu",
+  "status": "completed",
+  "imu": {
+    "sensor": "BNO055",
+    "interface": "I2C",
+    "ros_topic": "/imu",
+    "ros_type": "sensor_msgs/msg/Imu",
+    "publish_rate_hz": 10
+  },
+  "node": {
+    "package": "picarx_control",
+    "name": "imu_node",
+    "run_with_sudo": true
+  },
+  "published_fields": {
+    "orientation": true,
+    "angular_velocity": true,
+    "linear_acceleration": true
+  },
+  "notes": [
+    "Node veikia patikimai paleidžiant su sudo.",
+    "Naudojamas BNO055 per adafruit_blinka ir adafruit_circuitpython_bno055.",
+    "IMU bus naudojamas tolimesniame sensor fusion etape kartu su lidar."
+  ],
+  "next_stage": "11_sensor_fusion"
+}
