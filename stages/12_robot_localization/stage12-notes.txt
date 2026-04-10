@@ -1,0 +1,23 @@
+Stage 12 – Robot Localization (EKF IMU)
+
+- EKF node successfully configured
+- IMU data integrated
+- /odometry/filtered publishing at ~10 Hz
+- TF odom -> base_link working
+
+Key fixes:
+- IMU frame_id set to imu_link
+- EKF config reduced to yaw + angular velocity
+- Static transforms added (base_link → sensors)
+
+Critical issue:
+- Fast DDS shared memory conflict (root vs user)
+
+Solution:
+- Switched to Cyclone DDS (rmw_cyclonedds_cpp)
+
+Limitations:
+- No position tracking (x,y = 0)
+- Requires additional sensors (wheel odometry or SLAM)
+
+Status: OK

@@ -1,0 +1,21 @@
+{
+  "stage": 12,
+  "name": "robot_localization_ekf_imu",
+  "status": "completed",
+  "inputs": [
+    "/imu"
+  ],
+  "outputs": [
+    "/odometry/filtered",
+    "tf: odom->base_link"
+  ],
+  "frequency_hz": 10,
+  "mode": "2D",
+  "middleware": "rmw_cyclonedds_cpp",
+  "notes": [
+    "Uses IMU only",
+    "Yaw and angular velocity Z enabled",
+    "Position not estimated",
+    "Cyclone DDS required due to Fast DDS SHM issues"
+  ]
+}
