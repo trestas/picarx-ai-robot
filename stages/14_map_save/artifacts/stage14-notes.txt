@@ -1,0 +1,22 @@
+Stage 14 – Map Save
+
+Status: in progress / complete after successful save
+
+Tikslas:
+- išsaugoti aktyvų SLAM žemėlapį į .pgm ir .yaml failus
+
+Naudotas įrankis:
+- nav2_map_server
+- map_saver_cli
+
+Tikėtini rezultatai:
+- room_map.pgm
+- room_map.yaml
+
+Priklausomybės:
+- slam_toolbox aktyvus
+- /map publikuojamas
+- TF grandinė veikia
+
+Naudojimo paskirtis:
+- 15 etape šis map bus naudojamas lokalizacijai

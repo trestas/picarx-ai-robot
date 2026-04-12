@@ -1,0 +1,21 @@
+{
+  "stage": 14,
+  "name": "map_save",
+  "status": "completed",
+  "middleware": "rmw_cyclonedds_cpp",
+  "input_topics": [
+    "/map",
+    "/map_metadata"
+  ],
+  "tool": "nav2_map_server/map_saver_cli",
+  "outputs": [
+    "/home/arvydas/14_map_save/maps/room_map.pgm",
+    "/home/arvydas/14_map_save/maps/room_map.yaml"
+  ],
+  "notes": [
+    "Map saved from active slam_toolbox session",
+    "Saved map will be reused in localization stage",
+    "Headless workflow confirmed"
+  ],
+  "next_stage": 15
+}
