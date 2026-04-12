@@ -1,0 +1,25 @@
+{
+  "stage": 13,
+  "name": "slam_toolbox_mapping",
+  "status": "completed",
+  "middleware": "rmw_cyclonedds_cpp",
+  "inputs": [
+    "/scan",
+    "tf: base_link->laser",
+    "tf: odom->base_link"
+  ],
+  "outputs": [
+    "/map",
+    "/map_metadata",
+    "tf: map->odom"
+  ],
+  "slam_package": "slam_toolbox",
+  "slam_node": "async_slam_toolbox_node",
+  "lifecycle_required": true,
+  "notes": [
+    "SLAM toolbox configured and activated successfully",
+    "Map generation verified",
+    "TF chain map->odom->base_link verified",
+    "Use lidar launch without RViz in headless mode"
+  ]
+}

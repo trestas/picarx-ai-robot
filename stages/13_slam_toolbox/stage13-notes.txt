@@ -1,0 +1,28 @@
+Stage 13 – SLAM Toolbox Mapping
+
+Status: OK
+
+Patvirtinta:
+- /scan active
+- /map active
+- /map_metadata active
+- TF map -> odom active
+- TF odom -> base_link active
+
+Naudotas mazgas:
+- slam_toolbox / async_slam_toolbox_node
+
+Svarbios pastabos:
+- reikia lifecycle aktyvacijos:
+  1) configure
+  2) activate
+
+Rekomendacija:
+- headless režime naudoti lidar launch be RViz
+
+Middleware:
+- rmw_cyclonedds_cpp
+
+Rezultatas:
+- realus OccupancyGrid žemėlapis generuojamas
+- sistema pasiruošusi map save ir localization etapui
