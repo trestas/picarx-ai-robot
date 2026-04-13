@@ -1,0 +1,31 @@
+{
+  "stage": 15,
+  "name": "localization_saved_map",
+  "status": "completed",
+  "middleware": "rmw_cyclonedds_cpp",
+  "map_file": "/home/arvydas/14_map_save/maps/room_map.yaml",
+  "components": [
+    "nav2_map_server",
+    "nav2_amcl"
+  ],
+  "input_topics": [
+    "/scan",
+    "/odometry/filtered"
+  ],
+  "output_topics": [
+    "/map",
+    "/map_metadata",
+    "/amcl_pose",
+    "/particle_cloud"
+  ],
+  "tf_outputs": [
+    "map->odom"
+  ],
+  "achievements": [
+    "Map server launched successfully",
+    "AMCL launched successfully",
+    "Localization on saved map confirmed",
+    "map->odom transform confirmed"
+  ],
+  "next_stage": 16
+}

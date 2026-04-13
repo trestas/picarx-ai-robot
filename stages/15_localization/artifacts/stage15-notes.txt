@@ -1,0 +1,24 @@
+Stage 15 – Localization
+
+Status:
+completed
+
+Tikslas:
+- lokalizuoti robotą pagal anksčiau išsaugotą room_map.yaml
+
+Naudoti mazgai:
+- map_server
+- amcl
+
+Patvirtinta:
+- /map aktyvus
+- /map_metadata aktyvus
+- /amcl_pose aktyvus
+- /particle_cloud aktyvus
+- TF map -> odom aktyvus
+
+Naudojamas failas:
+- /home/arvydas/14_map_save/maps/room_map.yaml
+
+Išvada:
+- lokalizacijos režimas pagal išsaugotą map veikia sėkmingai
