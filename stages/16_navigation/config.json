@@ -1,0 +1,32 @@
+{
+  "stage": 16,
+  "name": "navigation_base",
+  "status": "completed_with_known_limitation",
+  "middleware": "rmw_cyclonedds_cpp",
+  "map_file": "/home/arvydas/14_map_save/maps/room_map.yaml",
+  "input_topics": [
+    "/scan",
+    "/odometry/filtered",
+    "/amcl_pose"
+  ],
+  "output_topics": [
+    "/cmd_vel_nav",
+    "/cmd_vel_smoothed"
+  ],
+  "custom_nodes": [
+    "cmd_vel_bridge_node"
+  ],
+  "actions": [
+    "/navigate_to_pose",
+    "/navigate_through_poses"
+  ],
+  "achievements": [
+    "Nav2 stack launched successfully",
+    "Action servers available",
+    "cmd_vel bridge node launched successfully",
+    "Manual /cmd_vel_smoothed test moves robot",
+    "Controller attempts to execute paths"
+  ],
+  "known_limitation": "Navigation aborts with 'Failed to make progress' because translational odometry is insufficient",
+  "next_stage": 17
+}
